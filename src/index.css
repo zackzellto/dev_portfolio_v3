@@ -13,3 +13,12 @@ body {
   line-height: 1.75;
   background-color: #222831;
 }
+
+.animated-div {
+  transition: width 2s ease-in-out;
+  width: 0;
+}
+
+.visible {
+  width: 100% !important; /* Override inline width */
+}
