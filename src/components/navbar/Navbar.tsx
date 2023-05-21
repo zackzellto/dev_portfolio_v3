@@ -1,4 +1,14 @@
 import React, { useState, useEffect } from "react";
+import GitHubIcon from "../../assets/github-icon.svg";
+import LinkedInIcon from "../../assets/linkedin-icon.svg";
+import TwitterIcon from "../../assets/twitter-icon.svg";
+import CodePenIcon from "../../assets/codepen-icon.svg";
+import {
+  FaGithubAlt,
+  FaLinkedinIn,
+  FaTwitterSquare,
+  FaCodepen,
+} from "react-icons/fa";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -123,6 +133,21 @@ const Navbar = () => {
                   <button className="rounded-lg bg-[#00ADB5] px-6 py-2 text-sm font-medium text-white">
                     Resume
                   </button>
+                </div>{" "}
+                <div className="relative top-[48%]  mx-auto h-[1px] w-[200px] bg-[#00ADB5] drop-shadow-md"></div>
+                <div className="relative top-[50%] flex items-center justify-center">
+                  <a href="" className="mx-4">
+                    <FaGithubAlt className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
+                  </a>
+                  <a href="" className="mx-4">
+                    <FaLinkedinIn className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
+                  </a>
+                  <a href="" className="mx-4">
+                    <FaTwitterSquare className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
+                  </a>
+                  <a href="" className="mx-4">
+                    <FaCodepen className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
+                  </a>
                 </div>
               </>
             )}
