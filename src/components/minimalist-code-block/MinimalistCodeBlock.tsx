@@ -8,7 +8,7 @@ const MinimalistCodeBlock = (props: Props) => {
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveDiv((prev) => prev + 1);
-    }, 50);
+    }, 30);
 
     return () => clearInterval(timer);
   }, []);
@@ -169,30 +169,35 @@ const MinimalistCodeBlock = (props: Props) => {
       marginLeft: "72%",
     },
     {
+      width: "0px",
       maxWidth: "8%",
       color: "#9C2CE0",
       marginTop: "10px",
       marginLeft: "2%",
     },
     {
+      width: "0px",
       maxWidth: "25%",
       color: "#FF0000",
       marginTop: "10px",
       marginLeft: "6%",
     },
     {
+      width: "0px",
       maxWidth: "8%",
       color: "#9C2CE0",
       marginTop: "10px",
       marginLeft: "2%",
     },
     {
+      width: "0px",
       maxWidth: "16%",
       color: "#4ECC4C",
       marginTop: "30px",
       marginLeft: "2%",
     },
     {
+      width: "0px",
       maxWidth: "60%",
       color: "#FFFFFF",
       marginTop: "-8px",
