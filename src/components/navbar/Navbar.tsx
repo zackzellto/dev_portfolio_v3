@@ -36,11 +36,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed left-0 right-0 top-0 z-50 bg-[#222831] ${
+      style={{ boxShadow: "0px 4px 4px rgba(0, 173, 181, 0.25)" }}
+      className={`fixed left-0 right-0 top-0 z-50 h-[8%] shadow-md  ${
         visible ? "navbar-visible" : "navbar-hidden"
       }`}
     >
-      <div className="flex items-center justify-between bg-transparent p-4">
+      <div className="flex items-center  justify-between bg-transparent p-4">
         {!isDesktop && (
           <div className="text-white">
             <button
