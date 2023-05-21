@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from "react";
-import GitHubIcon from "../../assets/github-icon.svg";
-import LinkedInIcon from "../../assets/linkedin-icon.svg";
-import TwitterIcon from "../../assets/twitter-icon.svg";
-import CodePenIcon from "../../assets/codepen-icon.svg";
 import {
   FaGithubAlt,
   FaLinkedinIn,
@@ -51,7 +47,7 @@ const Navbar = () => {
         visible ? "navbar-visible" : "navbar-hidden"
       }`}
     >
-      <div className="flex items-center  justify-between bg-transparent p-4">
+      <div className="flex items-center justify-between bg-transparent p-4">
         {!isDesktop && (
           <div className="text-white">
             <button
@@ -104,7 +100,7 @@ const Navbar = () => {
             ) : (
               <>
                 <button
-                  className="fixed right-8 top-8 text-white focus:outline-none"
+                  className="fixed right-8  top-8 text-white focus:outline-none"
                   onClick={toggleMenu}
                 >
                   <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -130,7 +126,7 @@ const Navbar = () => {
                   </li>
                 </ul>
                 <div className="mt-4 flex items-center justify-center">
-                  <button className="rounded-lg bg-[#00ADB5] px-6 py-2 text-sm font-medium text-white">
+                  <button className="rounded-lg border border-[#00ADB5] bg-[#222831] px-6 py-2 text-sm font-medium text-white">
                     Resume
                   </button>
                 </div>{" "}
