@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    setVisible(prevScrollPos > currentScrollPos);
+    setPrevScrollPos(currentScrollPos);
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -10,11 +18,10 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > 640);
+      setIsDesktop(window.innerWidth > 768);
     };
 
     handleResize();
-
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -22,13 +29,22 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50 bg-[#222831]">
+    <nav
+      className={`fixed left-0 right-0 top-0 z-50 bg-[#222831] ${
+        visible ? "navbar-visible" : "navbar-hidden"
+      }`}
+    >
       <div className="flex items-center justify-between bg-transparent p-4">
         {!isDesktop && (
           <div className="text-white">
             <button
-              className="fixed right-8 top-8 text-white  focus:outline-none"
+              className="fixed right-8 top-8 text-white focus:outline-none"
               onClick={toggleMenu}
             >
               <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -68,11 +84,11 @@ const Navbar = () => {
                   <li className="relative top-[6px]  flex">
                     <div className="px-[5px] text-[12px] text-white">4.</div>
                     <a href="#contact">Contact</a>
-                  </li>{" "}
+                  </li>
                   <button className="relative rounded-lg border border-[#00ADB5] bg-[#222831] px-4 py-2 text-sm font-medium text-white">
                     Resume
                   </button>
-                </ul>{" "}
+                </ul>
               </>
             ) : (
               <>
@@ -102,7 +118,6 @@ const Navbar = () => {
                     <a href="#contact">Contact</a>
                   </li>
                 </ul>
-
                 <div className="mt-4 flex items-center justify-center">
                   <button className="rounded-lg bg-[#00ADB5] px-6 py-2 text-sm font-medium text-white">
                     Resume

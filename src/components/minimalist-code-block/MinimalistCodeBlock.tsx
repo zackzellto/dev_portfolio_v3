@@ -1,74 +1,3 @@
-// import React, { useEffect, useState } from "react";
-
-// type Props = {};
-
-// const MinimalistCodeBlock = (props: Props) => {
-//   const [activeDiv, setActiveDiv] = useState(0);
-
-//   useEffect(() => {
-//     const timer = setInterval(() => {
-//       setActiveDiv((prev) => prev + 1);
-//     }, 100);
-
-//     return () => clearInterval(timer);
-//   }, []);
-
-//   const divsData = [
-//     { maxWidth: "50vw", color: "#C2CC4C", marginTop: "2vh", marginLeft: "2vw" },
-//     { maxWidth: 235, color: "#C2CC4C", marginTop: 8, marginLeft: 8 },
-//     { maxWidth: 181, color: "#C2CC4C", marginTop: 8, marginLeft: 8 },
-//     { maxWidth: 300, color: "#4ECC4C", marginTop: 32, marginLeft: 8 },
-//     { maxWidth: 24, color: "#4939FF", marginTop: -8, marginLeft: 320 },
-//     { maxWidth: 195, color: "#EA2AD7", marginTop: 8, marginLeft: 24 },
-//     { maxWidth: 195, color: "#FFFFFF", marginTop: 8, marginLeft: 36 },
-//     { maxWidth: 245, color: "#FFFFFF", marginTop: 8, marginLeft: 36 },
-//     { maxWidth: 170, color: "#FF0000", marginTop: 8, marginLeft: 36 },
-//     { maxWidth: 24, color: "#4939FF", marginTop: 8, marginLeft: 8 },
-//     { maxWidth: 140, color: "#4CCCCC", marginTop: 24, marginLeft: 8 },
-//     { maxWidth: 24, color: "#4ECC4C", marginTop: -8, marginLeft: 160 },
-//     { maxWidth: 45, color: "#FF0000", marginTop: 8, marginLeft: 24 },
-//     { maxWidth: 24, color: "#9C2CE0", marginTop: 8, marginLeft: 36 },
-//     { maxWidth: 350, color: "#FFFFFF", marginTop: 8, marginLeft: 48 },
-//     { maxWidth: 280, color: "#FFFFFF", marginTop: 8, marginLeft: 48 },
-//     { maxWidth: 450, color: "#FFFFFF", marginTop: 8, marginLeft: 48 },
-//     { maxWidth: 24, color: "#9C2CE0", marginTop: 8, marginLeft: 36 },
-//     { maxWidth: 24, color: "#9C2CE0", marginTop: 8, marginLeft: 36 },
-//     { maxWidth: 56, color: "#E0622C", marginTop: 8, marginLeft: 48 },
-//     { maxWidth: 250, color: "#FFFFFF", marginTop: -8, marginLeft: 120 },
-//     { maxWidth: 56, color: "#E0622C", marginTop: -8, marginLeft: 385 },
-//     { maxWidth: 24, color: "#9C2CE0", marginTop: 8, marginLeft: 36 },
-//     { maxWidth: 45, color: "#FF0000", marginTop: 8, marginLeft: 24 },
-//     { maxWidth: 24, color: "#4ECC4C", marginTop: 8, marginLeft: 8 },
-//     { maxWidth: 48, color: "#03A4FF", marginTop: 32, marginLeft: 8 },
-//     { maxWidth: 72, color: "#4ECC4C", marginTop: -8, marginLeft: 70 },
-//     { maxWidth: 240, color: "#EA2AD7", marginTop: -8, marginLeft: 160 },
-//   ];
-
-//   return (
-//     <div className="mt-10 rounded-xl bg-[#393E46] p-8">
-//       <div className="h-[450px] w-[435px] rounded-lg px-4 py-4 drop-shadow-lg ">
-//         {divsData.map((divData, index) => (
-//           <div
-//             key={index}
-//             className={`animated-div h-2 rounded-xl ${
-//               activeDiv > index ? "visible" : ""
-//             }`}
-//             style={{
-//               backgroundColor: divData.color,
-//               maxWidth: `${divData.maxWidth}px`,
-//               transitionDelay: `${index * 0.5}s`,
-//               marginTop: `${divData.marginTop}px`,
-//               marginLeft: `${divData.marginLeft}px`,
-//             }}
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default MinimalistCodeBlock;
-
 import React, { useEffect, useState } from "react";
 
 type Props = {};
@@ -86,196 +15,212 @@ const MinimalistCodeBlock = (props: Props) => {
 
   const divsData = [
     {
-      maxWidth: "22.24vw",
+      width: "0px",
+      maxWidth: "25%",
       color: "#C2CC4C",
-      marginTop: "-2.74vh",
-      marginLeft: "0.42vw",
+      marginTop: "10px",
+      marginLeft: "2%",
     },
     {
-      maxWidth: "15.24vw",
+      width: "0px",
+      maxWidth: "37%",
       color: "#C2CC4C",
-      marginTop: "0.74vh",
-      marginLeft: "0.42vw",
+      marginTop: "10px",
+      marginLeft: "2%",
     },
     {
-      maxWidth: "25.43vw",
+      width: "0px",
+      maxWidth: "20%",
       color: "#C2CC4C",
-      marginTop: "0.74vh",
-      marginLeft: "0.42vw",
+      marginTop: "10px",
+      marginLeft: "2%",
     },
     {
-      maxWidth: "35.63vw",
+      width: "0px",
+      maxWidth: "40%",
       color: "#4ECC4C",
-      marginTop: "2.96vh",
-      marginLeft: "0.42vw",
+      marginTop: "40px",
+      marginLeft: "2%",
     },
     {
-      maxWidth: "4.25vw",
+      width: "0px",
+      maxWidth: "5%",
       color: "#4939FF",
-      marginTop: "-.8vh",
-      marginLeft: "40vw",
+      marginTop: "-8px",
+      marginLeft: "45%",
     },
     {
-      maxWidth: "15.16vw",
+      width: "0px",
+      maxWidth: "15%",
       color: "#EA2AD7",
-      marginTop: "1.5vh",
-      marginLeft: "3.25vw",
+      marginTop: "10px",
+      marginLeft: "6%",
     },
     {
-      maxWidth: "30.16vw",
+      width: "0px",
+      maxWidth: "50%",
       color: "#FFFFFF",
-      marginTop: "1.5vh",
-      marginLeft: "4.88vw",
+      marginTop: "10px",
+      marginLeft: "10%",
     },
     {
-      maxWidth: "22.76vw",
+      width: "0px",
+      maxWidth: "42%",
       color: "#FFFFFF",
-      marginTop: "1.5vh",
-      marginLeft: "4.88vw",
+      marginTop: "10px",
+      marginLeft: "10%",
     },
     {
-      maxWidth: "18.85vw",
+      width: "0px",
+      maxWidth: "37%",
       color: "#FF0000",
-      marginTop: "1.5vh",
-      marginLeft: "4.88vw",
+      marginTop: "10px",
+      marginLeft: "8%",
     },
     {
-      maxWidth: "4.25vw",
+      width: "0px",
+      maxWidth: "5%",
       color: "#4939FF",
-      marginTop: "1.5vh",
-      marginLeft: "0.42vw",
+      marginTop: "10px",
+      marginLeft: "2%",
     },
     {
-      maxWidth: "25.29vw",
+      width: "0px",
+      maxWidth: "35%",
       color: "#4CCCCC",
-      marginTop: "3.22vh",
-      marginLeft: "0.42vw",
+      marginTop: "28px",
+      marginLeft: "2%",
     },
     {
-      maxWidth: "4.25vw",
+      width: "0px",
+      maxWidth: "5%",
       color: "#4ECC4C",
-      marginTop: "-.8vh",
-      marginLeft: "27.33vw",
+      marginTop: "-8px",
+      marginLeft: "40%",
     },
     {
-      maxWidth: "10.34vw",
+      width: "0px",
+      maxWidth: "17%",
       color: "#FF0000",
-      marginTop: "1.5vh",
-      marginLeft: "1.25vw",
+      marginTop: "10px",
+      marginLeft: "6%",
     },
     {
-      maxWidth: "6.25vw",
+      width: "0px",
+      maxWidth: "10%",
       color: "#9C2CE0",
-      marginTop: "1.5vh",
-      marginLeft: "1.88vw",
+      marginTop: "10px",
+      marginLeft: "10%",
     },
     {
-      maxWidth: "18.23vw",
+      width: "0px",
+      maxWidth: "13%",
       color: "#FFFFFF",
-      marginTop: "1.5vh",
-      marginLeft: "3.50vw",
+      marginTop: "10px",
+      marginLeft: "12%",
     },
     {
-      maxWidth: "14.58vw",
+      width: "0px",
+      maxWidth: "33%",
       color: "#FFFFFF",
-      marginTop: "1.5vh",
-      marginLeft: "3.50vw",
+      marginTop: "10px",
+      marginLeft: "12%",
     },
     {
-      maxWidth: "23.44vw",
-      color: "#FFFFFF",
-      marginTop: "1.5vh",
-      marginLeft: "3.50vw",
-    },
-    {
-      maxWidth: "6.25vw",
-      color: "#9C2CE0",
-      marginTop: "1.5vh",
-      marginLeft: "1.88vw",
-    },
-    {
-      maxWidth: "6.25vw",
-      color: "#9C2CE0",
-      marginTop: "1.5vh",
-      marginLeft: "1.88vw",
-    },
-    {
-      maxWidth: "7.92vw",
-      color: "#E0622C",
-      marginTop: "1.5vh",
-      marginLeft: "2.50vw",
-    },
-    {
-      maxWidth: "33.02vw",
-      color: "#FFFFFF",
-      marginTop: "-0.95vh",
-      marginLeft: "12.25vw",
-    },
-    {
-      maxWidth: "7.92vw",
-      color: "#E0622C",
-      marginTop: "-0.95vh",
-      marginLeft: "47.5vw",
-    },
-    {
-      maxWidth: "6.25vw",
-      color: "#9C2CE0",
-      marginTop: "1.5vh",
-      marginLeft: "1.88vw",
-    },
-    {
-      maxWidth: "10.34vw",
-      color: "#FF0000",
-      marginTop: "1.5vh",
-      marginLeft: "1.25vw",
-    },
-    {
-      maxWidth: "4.25vw",
-      color: "#4ECC4C",
-      marginTop: "1.5vh",
-      marginLeft: "0.42vw",
-    },
-    {
-      maxWidth: "12.50vw",
+      width: "0px",
+      maxWidth: "45%",
       color: "#03A4FF",
-      marginTop: "2.96vh",
-      marginLeft: "0.42vw",
+      marginTop: "10px",
+      marginLeft: "11%",
     },
     {
-      maxWidth: "8.75vw",
+      width: "0px",
+      maxWidth: "10%",
+      color: "#9C2CE0",
+      marginTop: "10px",
+      marginLeft: "10%",
+    },
+    {
+      width: "0px",
+      maxWidth: "5%",
       color: "#4ECC4C",
-      marginTop: "-0.9vh",
-      marginLeft: "14.65vw",
+      marginTop: "10px",
+      marginLeft: "2%",
     },
     {
-      maxWidth: "35.50vw",
-      color: "#EA2AD7",
-      marginTop: "-0.95vh",
-      marginLeft: "25.33vw",
+      width: "0px",
+      maxWidth: "15%",
+      color: "#E0622C",
+      marginTop: "10px",
+      marginLeft: "8%",
+    },
+    {
+      width: "0px",
+      maxWidth: "45%",
+      color: "#FFFFFF",
+      marginTop: "-8px",
+      marginLeft: "25%",
+    },
+    {
+      width: "0px",
+      maxWidth: "15%",
+      color: "#E0622C",
+      marginTop: "-8px",
+      marginLeft: "72%",
+    },
+    {
+      maxWidth: "8%",
+      color: "#9C2CE0",
+      marginTop: "10px",
+      marginLeft: "2%",
+    },
+    {
+      maxWidth: "25%",
+      color: "#FF0000",
+      marginTop: "10px",
+      marginLeft: "6%",
+    },
+    {
+      maxWidth: "8%",
+      color: "#9C2CE0",
+      marginTop: "10px",
+      marginLeft: "2%",
+    },
+    {
+      maxWidth: "16%",
+      color: "#4ECC4C",
+      marginTop: "30px",
+      marginLeft: "2%",
+    },
+    {
+      maxWidth: "60%",
+      color: "#FFFFFF",
+      marginTop: "-8px",
+      marginLeft: "20%",
     },
   ];
 
   return (
-    <div
-      className="mt-10 rounded-xl bg-[#393E46] p-8"
-      style={{ maxWidth: "100%" }}
-    >
-      <div className="h-[50vh] w-[90vw] rounded-lg px-4 py-4 drop-shadow-lg ">
-        {divsData.map((divData, index) => (
-          <div
-            key={index}
-            className={`animated-div h-2 rounded-xl ${
-              activeDiv > index ? "visible" : ""
-            }`}
-            style={{
-              backgroundColor: divData.color,
-              maxWidth: divData.maxWidth,
-              transitionDelay: `${index * 0.5}s`,
-              marginTop: divData.marginTop,
-              marginLeft: divData.marginLeft,
-            }}
-          />
-        ))}
+    <div className="container mx-auto max-w-screen-sm">
+      <div className="mt-10 h-[50vh] rounded-xl bg-[#393E46] ">
+        <div className=" max-w-screen-sm rounded-lg px-4 py-4 drop-shadow-lg">
+          {divsData.map((divData, index) => (
+            <div
+              key={index}
+              className={`animated-div h-2 w-1/4   rounded-xl md:w-1/2 lg:w-3/4 ${
+                activeDiv > index ? "visible" : ""
+              }`}
+              style={{
+                backgroundColor: divData.color,
+                maxWidth: divData.maxWidth,
+                transitionDelay: `${index * 0.5}s`,
+                marginTop: divData.marginTop,
+                marginLeft: divData.marginLeft,
+                width: divData.width,
+              }}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
