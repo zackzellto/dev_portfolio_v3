@@ -16,14 +16,14 @@ const AboutMe = (props: Props) => {
         </div>
       </div>
       <br />
-      <div className=" relative  z-30 mx-auto h-[177px] w-[200px] rounded-lg bg-[#00ADB5]">
+      <div className=" relative z-30 mx-auto h-[177px] w-[199px] rounded-lg bg-[#00ADB5]">
         <img
-          className=" mt-16 opacity-40 shadow-xl hover:opacity-100"
+          className=" mt-16 w-[200px] opacity-40 shadow-xl hover:opacity-100"
           src={ZackPic}
           alt="Zack Picture"
         />
       </div>{" "}
-      <div className="relative bottom-16 -z-10 m-auto w-[350px] rounded-xl bg-[#393E46] p-4 text-white shadow-xl">
+      <div className="relative bottom-16 -z-10 m-auto w-[100%] rounded-xl bg-[#393E46] p-4 text-white shadow-xl drop-shadow-lg">
         <div className="mt-16 indent-8">
           {" "}
           Hello! I’m Zack and I have a deep rooted passion for problem solving.
