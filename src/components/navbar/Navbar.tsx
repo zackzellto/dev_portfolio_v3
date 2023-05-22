@@ -43,15 +43,15 @@ const Navbar = () => {
   return (
     <nav
       style={{ boxShadow: "0px 4px 4px rgba(0, 173, 181, 0.25)" }}
-      className={`fixed left-0 right-0 top-0 z-50 h-[8%] shadow-md  ${
+      className={`fixed left-0 right-0 top-0 z-50 h-[8%] bg-[#222831] shadow-md  ${
         visible ? "navbar-visible" : "navbar-hidden"
       }`}
     >
-      <div className="flex items-center justify-between bg-transparent p-4">
+      <div className="flex items-center justify-between  p-4">
         {!isDesktop && (
           <div className="text-white">
             <button
-              className="fixed right-8 top-8 text-white focus:outline-none"
+              className="fixed right-8 top-4 text-white focus:outline-none"
               onClick={toggleMenu}
             >
               <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -100,7 +100,7 @@ const Navbar = () => {
             ) : (
               <>
                 <button
-                  className="fixed right-8  top-8 text-white focus:outline-none"
+                  className="fixed right-8 top-4 text-white focus:outline-none"
                   onClick={toggleMenu}
                 >
                   <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
