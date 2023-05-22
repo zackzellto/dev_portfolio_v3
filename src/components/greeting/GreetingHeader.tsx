@@ -26,7 +26,7 @@ const GreetingHeader = (props: Props) => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center py-8 md:py-8 lg:mt-32">
+    <div className="mt-8 flex flex-col items-center justify-center py-8 md:py-8 lg:mt-32">
       <div className="mt-2 text-left text-[18px] font-bold text-[#00ADB5] drop-shadow-md md:text-center lg:text-center lg:text-[24px] ">
         <div className="relative top-14">
           {isMobile ? "Hey! I'm" : "Hi, my name is,"}{" "}
@@ -44,7 +44,7 @@ const GreetingHeader = (props: Props) => {
           lives of others.
         </div>{" "}
       </div>
-      <div className="relative right-[35%] top-8 flex h-[1px] w-[30%] bg-[#00ADB5] drop-shadow-md md:right-8 md:w-[35%] lg:right-[10%] ">
+      <div className="relative top-8 mx-auto mt-8 flex h-[1px] w-[80%] bg-[#00ADB5] drop-shadow-md md:right-8 md:w-[35%] lg:right-[10%] ">
         {" "}
         <div className="hidden md:relative md:left-[100%] md:top-[-16px] md:flex">
           <a href="" className="mx-2">

@@ -206,7 +206,7 @@ const MinimalistCodeBlock = (props: Props) => {
   ];
 
   return (
-    <div className="container mx-auto max-w-screen-sm lg:mt-40">
+    <div className="container mx-auto max-w-screen-sm shadow-xl lg:mt-40">
       <div className="mt-10 rounded-xl bg-[#393E46] ">
         <div className=" max-w-screen-sm rounded-lg px-4 py-4 drop-shadow-lg">
           {divsData.map((divData, index) => (

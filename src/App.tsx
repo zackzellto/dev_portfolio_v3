@@ -3,6 +3,7 @@ import "./index.css";
 import GreetingHeader from "./components/greeting/GreetingHeader";
 import Navbar from "./components/navbar/Navbar";
 import MinimalistCodeBlock from "./components/minimalist-code-block/MinimalistCodeBlock";
+import AboutMe from "./components/about-me/AboutMe";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
           <GreetingHeader />
           <MinimalistCodeBlock />
         </div>
+        <br />
+        <AboutMe />
       </div>
     </>
   );
