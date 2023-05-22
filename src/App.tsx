@@ -9,7 +9,7 @@ function App() {
     <>
       <Navbar />
       <div className="items-center justify-center p-8">
-        <div className="flex flex-col">
+        <div className="lg:grid lg:grid-cols-2 ">
           <GreetingHeader />
           <MinimalistCodeBlock />
         </div>
