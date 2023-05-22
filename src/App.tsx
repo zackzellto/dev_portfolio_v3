@@ -4,6 +4,7 @@ import GreetingHeader from "./components/greeting/GreetingHeader";
 import Navbar from "./components/navbar/Navbar";
 import MinimalistCodeBlock from "./components/minimalist-code-block/MinimalistCodeBlock";
 import AboutMe from "./components/about-me/AboutMe";
+import Experience from "./components/experience/Experience";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         </div>
         <br />
         <AboutMe />
+        <br />
+        <Experience />
       </div>
     </>
   );
