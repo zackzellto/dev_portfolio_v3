@@ -48,7 +48,7 @@ const TechnologyIcons = () => {
   ];
 
   return (
-    <div className=" mt-4 grid grid-cols-5 gap-4 sm:grid-cols-4 md:grid-cols-10 lg:grid-cols-5 xl:grid-cols-10">
+    <div className=" mt-4 grid grid-cols-5 gap-4 sm:grid-cols-10 md:grid-cols-10 lg:grid-cols-5 xl:grid-cols-10 2xl:grid-cols-10">
       {icons.map((icon, index) => (
         <div
           key={index}
@@ -69,8 +69,8 @@ const AboutMe = (props: Props) => {
   return (
     <div className="m-auto items-center justify-center lg:relative ">
       <div className="text-center text-[18px] font-bold text-[#00ADB5] drop-shadow-md md:text-center lg:text-center lg:text-[20px] ">
-        <div className="relative top-8 lg:top-56 lg:ml-[54%]">
-          <div className="relative right-14 top-6 mr-6 text-[12px] text-white ">
+        <div className="relative top-8 lg:top-64 lg:ml-[54%]">
+          <div className="relative right-14 top-6 mr-6 text-[12px] text-white lg:right-16 ">
             1.
           </div>
           <div className="">About Myself</div>
@@ -79,7 +79,7 @@ const AboutMe = (props: Props) => {
         </div>
       </div>
       <br />
-      <div className="relative z-30 mx-auto mt-8 flex h-auto w-[220px] rounded-lg bg-[#00ADB5] sm:mt-8 sm:h-[230px] sm:w-[250px] md:left-[200px] md:top-16 md:mb-8 md:h-[285px] md:w-[320px] lg:-left-[21%] lg:top-48 lg:h-[355px] lg:w-[400px]">
+      <div className="relative z-30 mx-auto mt-8 flex h-auto w-[220px] rounded-lg bg-[#00ADB5] sm:mt-8 sm:h-[230px] sm:w-[250px] md:left-[200px] md:top-16 md:mb-8 md:h-[285px] md:w-[320px] lg:-left-[21%] lg:top-80 lg:h-[350px] lg:w-[390px] xl:top-48">
         <img
           className="opacity-40 shadow-xl hover:opacity-100 md:mt-0"
           src={ZackPic}
