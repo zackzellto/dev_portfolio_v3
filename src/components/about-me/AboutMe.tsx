@@ -70,10 +70,10 @@ const AboutMe = (props: Props) => {
     <div className="m-auto items-center justify-center lg:relative ">
       <div className="text-center text-[18px] font-bold text-[#00ADB5] drop-shadow-md md:text-center lg:text-center lg:text-[20px] ">
         <div className="relative top-8 lg:top-56 lg:ml-[54%]">
-          <div className="relative right-14 top-6 text-[12px] text-white ">
+          <div className="relative right-14 top-6 mr-6 text-[12px] text-white ">
             1.
           </div>
-          <div className="">About Me</div>
+          <div className="">About Myself</div>
 
           <div className="mx-auto h-[1px] w-[340px] bg-[#FFFFFF] drop-shadow-md"></div>
         </div>
