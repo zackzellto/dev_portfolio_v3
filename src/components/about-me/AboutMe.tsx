@@ -17,14 +17,14 @@ const AboutMe = (props: Props) => {
         </div>
       </div>
       <br />
-      <div className="h-177 w-199 relative z-30 mx-auto flex rounded-lg bg-[#00ADB5] sm:h-[220px] sm:w-[250px] md:left-[200px] md:top-16 md:mb-8 md:h-[285px] md:w-[320px] lg:-left-[21%] lg:top-48 lg:h-[355px] lg:w-[400px]">
+      <div className="relative z-30 mx-auto mt-8 flex h-auto w-[220px] rounded-lg bg-[#00ADB5] sm:mt-8 sm:h-[230px] sm:w-[250px] md:left-[200px] md:top-16 md:mb-8 md:h-[285px] md:w-[320px] lg:-left-[21%] lg:top-48 lg:h-[355px] lg:w-[400px]">
         <img
-          className="mx-auto mt-16 flex opacity-40 shadow-xl hover:opacity-100 md:mt-0"
+          className="opacity-40 shadow-xl hover:opacity-100 md:mt-0"
           src={ZackPic}
           alt="Zack Picture"
         />
       </div>
-      <div className="relative bottom-8 -z-10 m-auto w-[100%] rounded-xl bg-[#393E46] p-4 text-[14px] text-white shadow-xl drop-shadow-lg md:bottom-40 md:p-8 lg:-right-32 lg:bottom-32 lg:w-[60%] lg:max-w-[1000px] lg:px-32">
+      <div className="relative bottom-8 -z-10 m-auto w-[100%] rounded-xl bg-[#393E46] p-4 text-[14px] text-white shadow-xl drop-shadow-lg md:bottom-32 lg:-right-32 lg:bottom-32 lg:w-[60%] lg:max-w-[1000px] lg:px-32">
         <div className="mt-8 indent-8 md:w-[50%] lg:relative lg:left-24 lg:w-[100%]">
           Hello! I’m Zack and I have a deep-rooted passion for problem solving.
           I didn’t have the resources to go to college when I was younger, so I
