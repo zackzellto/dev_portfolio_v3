@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto max-w-screen-2xl drop-shadow-lg lg:mt-40">
+      <div className="container mx-auto max-w-screen-2xl drop-shadow-lg lg:mt-24">
         <div className="items-center justify-center p-8">
           <div className="lg:grid lg:grid-cols-2 ">
             <div>

@@ -26,7 +26,7 @@ const GreetingHeader = (props: Props) => {
   }, []);
 
   return (
-    <div className="mt-8 flex flex-col items-center justify-center py-8 md:py-8 lg:mt-32">
+    <div className="mt-8 flex flex-col items-center justify-center py-8 md:py-8 lg:mt-24">
       <div className="mt-2 text-left text-[18px] font-bold text-[#00ADB5] drop-shadow-md md:text-center lg:text-center lg:text-[24px] ">
         <div className="relative top-14">
           {isMobile ? "Hey! I'm" : "Hi, my name is,"}{" "}
