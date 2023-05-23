@@ -10,15 +10,25 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="items-center justify-center p-8">
-        <div className="lg:grid lg:grid-cols-2 ">
-          <GreetingHeader />
-          <MinimalistCodeBlock />
+      <div className="container mx-auto max-w-screen-2xl drop-shadow-lg lg:mt-40">
+        <div className="items-center justify-center p-8">
+          <div className="lg:grid lg:grid-cols-2 ">
+            <div>
+              <GreetingHeader />
+            </div>
+            <div>
+              <MinimalistCodeBlock />
+            </div>
+          </div>
+          <br />
+          <div>
+            <AboutMe />
+          </div>
+          <br />{" "}
+          <div>
+            <Experience />
+          </div>
         </div>
-        <br />
-        <AboutMe />
-        <br />
-        <Experience />
       </div>
     </>
   );
