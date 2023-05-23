@@ -1,7 +1,69 @@
 import React from "react";
 import ZackPic from "../../assets/zackpic.png";
+import ChatGPTLogo from "../../assets/icons/chatgpt-logo.png";
+import BootstrapLogo from "../../assets/icons/bootstrap-logo.png";
+import CSSLogo from "../../assets/icons/css-logo.png";
+import GitLogo from "../../assets/icons/git-logo.png";
+import HTMLLogo from "../../assets/icons/html-logo.png";
+import JavaScriptLogo from "../../assets/icons/javascript-logo.png";
+import NodeJSLogo from "../../assets/icons/nodejs-logo.png";
+import ReactLogo from "../../assets/icons/react-logo.png";
+import TailwindCSSLogo from "../../assets/icons/tailwindcss-logo.png";
+import TypeScriptLogo from "../../assets/icons/typescript-logo.png";
+import PythonLogo from "../../assets/icons/python-logo.png";
+import PostgreSQLLogo from "../../assets/icons/postgresql-logo.png";
+import MongoDBLogo from "../../assets/icons/mongodb-logo.png";
+import GoogleLogo from "../../assets/icons/google-logo.png";
+import FlaskLogo from "../../assets/icons/flask-logo.png";
+import DockerIcon from "../../assets/icons/docker-logo.png";
+import GimpLogo from "../../assets/icons/gimp-logo.png";
+import FigmaLogo from "../../assets/icons/figma-logo.png";
+import NextJSLogo from "../../assets/icons/nextjs-logo.png";
+import PhotoshopLogo from "../../assets/icons/photoshop-logo.png";
 
 type Props = {};
+
+const TechnologyIcons = () => {
+  const icons = [
+    ChatGPTLogo,
+    BootstrapLogo,
+    CSSLogo,
+    GitLogo,
+    HTMLLogo,
+    JavaScriptLogo,
+    NodeJSLogo,
+    ReactLogo,
+    TailwindCSSLogo,
+    TypeScriptLogo,
+    PythonLogo,
+    PostgreSQLLogo,
+    MongoDBLogo,
+    GoogleLogo,
+    FlaskLogo,
+    DockerIcon,
+    GimpLogo,
+    FigmaLogo,
+    NextJSLogo,
+    PhotoshopLogo,
+  ];
+
+  return (
+    <div className=" mt-4 grid grid-cols-5 gap-4 sm:grid-cols-4 md:grid-cols-10 lg:grid-cols-5 xl:grid-cols-10">
+      {icons.map((icon, index) => (
+        <div
+          key={index}
+          className="flex h-16 items-center justify-center sm:h-16"
+        >
+          <img
+            className=" h-auto max-h-full w-auto max-w-full"
+            src={icon}
+            alt="Skill Icons"
+          />
+        </div>
+      ))}
+    </div>
+  );
+};
 
 const AboutMe = (props: Props) => {
   return (
@@ -48,7 +110,10 @@ const AboutMe = (props: Props) => {
           stuff.
         </div>
         <br />
-        <div>Here are some technologies I am proficient with:</div>
+        <div>
+          Here are some technologies I am proficient with:{" "}
+          <div>{TechnologyIcons()}</div>{" "}
+        </div>
       </div>
     </div>
   );
