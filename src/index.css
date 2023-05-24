@@ -22,3 +22,14 @@ body {
 .visible {
   width: 100% !important; /* Override inline width */
 }
+
+ul.list-disc li::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 1.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #00adb5; /* Replace with desired color */
+}
