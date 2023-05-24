@@ -38,7 +38,9 @@ function App() {
               description2="Created a remote support model for live events saving the organization
               over $100,000+ a year on travel and lodging related expenses."
               description3="Solved high-level technical issues that helped lead to successful 
-              partnerships with major brands. "
+              partnerships with major brands."
+              fontColor="text-[#0071c5]"
+              URL="https://www.intel.com/content/www/us/en/homepage.html"
             />
           </div>
         </div>

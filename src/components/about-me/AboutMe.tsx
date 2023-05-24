@@ -88,10 +88,20 @@ const AboutMe = (props: Props) => {
       </div>
       <div className="relative bottom-8 -z-10 m-auto w-[100%] rounded-xl bg-[#393E46] p-4 text-[14px] text-white shadow-xl drop-shadow-lg md:bottom-32 lg:-right-32 lg:bottom-32 lg:w-[60%] lg:max-w-[1000px] lg:px-32">
         <div className="mt-8 indent-8 md:w-[50%] lg:relative lg:left-24 lg:w-[100%]">
-          Hello! I’m Zack and I have a deep-rooted passion for problem solving.
-          I didn’t have the resources to go to college when I was younger, so I
-          decided to teach myself everything I know! From building computers to
-          building software, I’ve done it all.
+          Hello! I’m Zack and I've been a developer for the better half of 2
+          years and I've learned so much in that short time. I have worked at a{" "}
+          <a
+            href="https://www.intel.com/content/www/us/en/homepage.html"
+            target="_blank"
+            rel="noreferrer"
+            className=" cursor-pointer text-[#00ADB5]"
+          >
+            big tech company
+          </a>{" "}
+          I have a deep-rooted passion for problem solving. I didn’t have the
+          resources to go to college when I was younger, so I decided to teach
+          myself everything I know! From building computers to building
+          software, I’ve done it all.
         </div>
         <br />
         <div className="indent-8 lg:relative lg:left-24">
