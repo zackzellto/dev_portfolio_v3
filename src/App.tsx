@@ -81,9 +81,9 @@ function App() {
           <div className="text-center lg:mx-auto lg:-mb-48 lg:mt-40 lg:h-[1px] lg:w-[95%] lg:bg-[#FFFFFF] lg:drop-shadow-md"></div>
           <div>
             <AboutMe />
-          </div>{" "}
+          </div>
           <div className="text-center sm:-mb-8 md:-mb-32 lg:mx-auto lg:-mb-16 lg:h-[1px] lg:w-[95%] lg:bg-[#FFFFFF] lg:drop-shadow-md"></div>
-          <br />{" "}
+          <br />
           <div>
             <Experience experiences={experiences} />
           </div>
