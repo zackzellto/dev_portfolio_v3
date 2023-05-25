@@ -68,7 +68,7 @@ const Experience = ({ experiences }: Props) => {
                     key={index}
                     className="relative bottom-10 -z-10 m-auto w-[100%] rounded-xl bg-[#393E46] p-4 text-[14px] text-white shadow-xl drop-shadow-lg lg:top-48 lg:mr-[340px] lg:w-[60%] lg:max-w-[1000px] lg:px-32 xl:mr-[29%]"
                   >
-                    <div className="mt-8 md:w-[50%] lg:relative lg:left-8 lg:w-[100%]">
+                    <div className="mt-8 md:w-[100%] lg:relative lg:left-8 lg:w-[100%]">
                       <div className="h-[2px] md:w-[50%] lg:relative lg:left-24 lg:w-[100%]"></div>
                       <div className="text-center text-[28px] font-bold text-[#00ADB5]">
                         {experience.position}
