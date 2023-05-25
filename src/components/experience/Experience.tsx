@@ -26,29 +26,32 @@ const Experience = ({ experiences }: Props) => {
     <>
       <div className="m-auto items-center justify-center lg:relative">
         <div className="text-center text-[18px] font-bold text-[#00ADB5] drop-shadow-md md:text-center lg:text-center lg:text-[20px]">
-          <div className="relative lg:top-24 lg:mr-[54%]">
-            <div className="lg:mr-33 relative right-[107px] top-6 mr-6 text-[12px] text-white lg:right-[120px]">
+          <div className="relative lg:top-24 ">
+            <div className="relative right-[107px] top-6 mr-6 text-[12px] text-white lg:right-[117px] ">
               2.
             </div>
             <div className="">Professional Experience</div>
-            <div className="mx-auto mb-8 h-[1px] w-[70%] bg-[#FFFFFF] text-center drop-shadow-md"></div>
+            <div className="mx-auto mb-8 h-[1px] w-[30%] bg-[#FFFFFF] text-center drop-shadow-md"></div>
           </div>
         </div>
       </div>
       <div className="m-auto items-center justify-center lg:relative">
-        <div className="w-[100%] ">
-          <div className="relative right-0">
+        <div className="mx-auto w-[100%] lg:mt-40 lg:w-[70%] ">
+          <div className="relative">
             <ul
               className="relative flex list-none flex-wrap rounded-xl bg-[#393E46] p-1"
               data-tabs="tabs"
               role="list"
             >
               {experiences.map((experience, index) => (
-                <li key={index} className="z-30 flex-auto text-center">
-                  <a
-                    className={`z-30 mb-0 flex w-full cursor-pointer items-center justify-center rounded-lg border-0 px-0 py-1 text-white transition-all ease-in-out ${
+                <li
+                  key={index}
+                  className="z-30 flex-auto rounded-md text-center"
+                >
+                  <button
+                    className={`z-30 mb-0 flex w-[95%] cursor-pointer flex-wrap items-center justify-center rounded-lg border border-[#00ADB5] text-white drop-shadow-xl transition-all ease-in-out lg:mx-auto ${
                       activeTab === index
-                        ? "translate-y-[-1px] transform text-[#00ADB5] "
+                        ? "translate-y-[-0px] transform text-[#00ADB5] "
                         : ""
                     }`}
                     data-tab-target=""
@@ -56,8 +59,8 @@ const Experience = ({ experiences }: Props) => {
                     aria-selected={activeTab === index ? "true" : "false"}
                     onClick={() => handleTabClick(index)}
                   >
-                    <span className="ml-1">{experience.company}</span>
-                  </a>
+                    <span className="mx-auto">{experience.company}</span>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -66,10 +69,10 @@ const Experience = ({ experiences }: Props) => {
                 return (
                   <div
                     key={index}
-                    className="relative bottom-10 -z-10 m-auto w-[100%] rounded-xl bg-[#393E46] p-4 text-[14px] text-white shadow-xl drop-shadow-lg lg:top-48 lg:mr-[340px] lg:w-[60%] lg:max-w-[1000px] lg:px-32 xl:mr-[29%]"
+                    className="relative bottom-10 -z-10 m-auto w-[100%] rounded-xl bg-[#393E46] p-4 text-[14px] text-white shadow-xl drop-shadow-lg  "
                   >
-                    <div className="mt-8 md:w-[100%] lg:relative lg:left-8 lg:w-[100%]">
-                      <div className="h-[2px] md:w-[50%] lg:relative lg:left-24 lg:w-[100%]"></div>
+                    <div className="mt-8 md:w-[100%] lg:relative lg:w-[100%]">
+                      <div className="h-[2px] md:w-[50%] lg:relative  lg:w-[100%]"></div>
                       <div className="text-center text-[28px] font-bold text-[#00ADB5]">
                         {experience.position}
                       </div>

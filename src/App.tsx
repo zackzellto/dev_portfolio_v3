@@ -87,6 +87,8 @@ function App() {
           <div>
             <Experience experiences={experiences} />
           </div>
+          <br />
+          <div className="text-center sm:-mb-8 md:-mb-32 lg:mx-auto lg:-mb-16 lg:h-[1px] lg:w-[95%] lg:bg-[#FFFFFF] lg:drop-shadow-md"></div>
         </div>
       </div>
     </>
