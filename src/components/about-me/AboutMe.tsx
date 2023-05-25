@@ -86,6 +86,7 @@ const AboutMe = (props: Props) => {
           alt="Zack Picture"
         />
       </div>
+
       <div className="relative bottom-8 -z-10 m-auto w-[100%] rounded-xl bg-[#393E46] p-4 text-[14px] text-white shadow-xl drop-shadow-lg md:bottom-32 lg:-right-32 lg:bottom-32 lg:w-[60%] lg:max-w-[1000px] lg:px-32">
         <div className="mt-8 indent-8 md:w-[50%] lg:relative lg:left-24 lg:w-[100%]">
           Hello! I’m Zack and I've been a developer for the better half of 2
@@ -97,8 +98,9 @@ const AboutMe = (props: Props) => {
             className=" cursor-pointer text-[#00ADB5]"
           >
             big tech company
-          </a>{" "}
-          I have a deep-rooted passion for problem solving. I didn’t have the
+          </a>
+          , <a>an immersive sports startup</a>,<a>a construction company</a>I
+          have a deep-rooted passion for problem solving. I didn’t have the
           resources to go to college when I was younger, so I decided to teach
           myself everything I know! From building computers to building
           software, I’ve done it all.
