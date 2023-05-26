@@ -9,6 +9,7 @@ import TuffShedLogo from "./assets/tuffshed-logo.png";
 import IntelLogo from "./assets/intel-logo.png";
 import QRailsLogo from "./assets/qrails-logo.png";
 import ReplayLogo from "./assets/replay-logo.png";
+import Portfolio from "./components/portfolio/Portfolio";
 
 const experiences = [
   {
@@ -91,7 +92,7 @@ function App() {
             <Experience experiences={experiences} />
           </div>
           <br />
-          <div className="mx-auto h-[1px] w-[340px] bg-[#FFFFFF] drop-shadow-md"></div>
+          <Portfolio />
         </div>
       </div>
     </>
