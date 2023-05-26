@@ -20,21 +20,16 @@ const FeaturedProjectCard = (props: Props) => {
       <div className="relative m-auto text-[#00ADB5]">
         <div className="relative mb-1 text-[14px]">Featured Project</div>
       </div>
-      <div className="relative m-auto w-[100%] rounded-xl bg-[#393E46] p-8 text-[14px] text-white shadow-xl drop-shadow-lg lg:w-[50%]">
-        <div className="flex items-center justify-center">
-          <div className="rounded-xl bg-[#4FEEC8]">
-            {" "}
-            <div
-              className={`mb-8 text-center text-[64px] font-bold ${props.fontFamily}`}
-            >
-              {props.title}
-            </div>
-            <img
-              className="w-[100%] overflow-hidden opacity-30 hover:opacity-100"
-              src={props.image}
-              alt="project image"
-            />
-          </div>
+      <img
+        className="hidden sm:w-full sm:justify-center sm:overflow-hidden sm:opacity-30 sm:hover:opacity-100 md:w-[50%]"
+        src={props.image}
+        alt="project image"
+      />
+      <div className="relative m-auto w-[100%] rounded-xl bg-[#393E46] p-8 text-[14px] text-white shadow-xl drop-shadow-lg lg:w-[70%]">
+        <div
+          className={`mb-8 text-center text-5xl font-bold drop-shadow-lg md:text-6xl lg:text-7xl ${props.fontFamily}`}
+        >
+          {props.title}
         </div>
 
         <div className="text-center text-[14px] font-normal text-[#EEEEEE] underline">
@@ -49,7 +44,7 @@ const FeaturedProjectCard = (props: Props) => {
         </div>
 
         <div className="mx-auto mb-4 mt-8 h-[1px] w-[70%] bg-[#00ADB5] text-center drop-shadow-md"></div>
-        <div className="mx-auto  w-[80%] text-[14px] font-normal text-[#EEEEEE]">
+        <div className="mx-auto w-[80%] text-[14px] font-normal text-[#EEEEEE]">
           <ul className="relative">
             <li className="mb-4 pl-2">
               <span className="bullet-color"></span>

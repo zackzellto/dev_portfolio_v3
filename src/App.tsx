@@ -103,7 +103,7 @@ function App() {
               </div>
               <div className="">My Portfolio</div>
 
-              <div className="mx-auto h-[1px] w-[340px] bg-[#FFFFFF] drop-shadow-md"></div>
+              <div className="mx-auto h-[1px] bg-[#FFFFFF] drop-shadow-md"></div>
             </div>
           </div>{" "}
           <br />
