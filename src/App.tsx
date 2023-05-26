@@ -12,6 +12,8 @@ import PythonLogo from "./assets/icons/python-logo.png";
 import MongoDBLogo from "./assets/icons/mongodb-logo.png";
 import FlaskLogo from "./assets/icons/flask-logo.png";
 import FeaturedProjectCard from "./components/portfolio/FeaturedProjectCard";
+import Jarvis from "./assets/jarvis-img.png";
+import WoodenHand from "./assets/woodhand-mock.png";
 
 const experiences = [
   {
@@ -117,9 +119,10 @@ function App() {
               description3={
                 "Also, fmly has a premium feature that will allow you to keep track of family members via GPS, so you will know where they are in case of any emergencies."
               }
-              image={""}
-              githubURL={""}
-              liveURL={""}
+              image={WoodenHand}
+              fontFamily=""
+              githubURL={"https://github.com/zackzellto/fmly-landing-pg"}
+              liveURL={"https://fmlyapp-landing-page.netlify.app/"}
               techUsed={[
                 ReactLogo,
                 TailwindCSSLogo,
@@ -142,10 +145,18 @@ function App() {
               description3={
                 "So what are you waiting for? Go and check out J.A.R.V.I.S today!"
               }
-              image={""}
-              githubURL={""}
-              liveURL={""}
-              techUsed={[]}
+              image={Jarvis}
+              fontFamily=""
+              githubURL={"https://github.com/zackzellto/JARVIS"}
+              liveURL={"https://jarvisopenai.netlify.app/"}
+              techUsed={[
+                ReactLogo,
+                TailwindCSSLogo,
+                TypeScriptLogo,
+                PythonLogo,
+                FlaskLogo,
+                MongoDBLogo,
+              ]}
             />
           </div>
         </div>
