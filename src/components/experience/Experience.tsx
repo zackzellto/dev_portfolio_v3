@@ -49,7 +49,7 @@ const Experience = ({ experiences }: Props) => {
                   className="z-30 flex-auto rounded-md p-2 text-center"
                 >
                   <button
-                    className={`mr-[8px]flex z-30 mx-auto w-[90%] cursor-pointer flex-wrap items-center justify-center rounded-lg border border-[#00ADB5] p-2  text-white drop-shadow-xl transition-all ease-in-out lg:mx-auto ${
+                    className={`mr-[8px]flex z-30 mx-auto w-[90%] cursor-pointer flex-wrap items-center justify-center rounded-lg border border-[#00ADB5] p-2 text-white drop-shadow-xl transition-all ease-in-out lg:mx-auto ${
                       activeTab === index ? "bg-[#00ADB5] text-black" : ""
                     } hover:scale-105`}
                     data-tab-target=""
@@ -57,7 +57,9 @@ const Experience = ({ experiences }: Props) => {
                     aria-selected={activeTab === index ? "true" : "false"}
                     onClick={() => handleTabClick(index)}
                   >
-                    <span className="mx-auto">{experience.company}</span>
+                    <span className="text-outline-white mx-auto">
+                      {experience.company}
+                    </span>
                   </button>
                 </li>
               ))}
@@ -71,14 +73,14 @@ const Experience = ({ experiences }: Props) => {
                   >
                     <div className="mt-8 md:w-[100%] lg:relative lg:w-[100%]">
                       <div className="h-[2px] md:w-[50%] lg:relative lg:w-[100%]"></div>
-                      <div className="text-center text-[28px] font-bold text-[#00ADB5]">
+                      <div className="text-center text-[28px] font-bold  text-[#00ADB5]">
                         {experience.position}
                       </div>
                       <div className="relative text-center text-[28px] text-white">
                         @
                       </div>
                       <div
-                        className={`relative text-center text-3xl font-normal drop-shadow-lg`}
+                        className={`relative text-center text-3xl font-bold  drop-shadow-lg`}
                         style={{ color: experience.fontColor }}
                       >
                         {experience.company}
