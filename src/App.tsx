@@ -35,7 +35,7 @@ const experiences = [
       "Developed an API solution that reduced customer drop-off rate by 65% and decreased customer-service call times.",
     description3:
       "Utilized Salesforce and additional microservices to develop solutions for internal tooling and utility, resulting in significant improvements in operational efficiency.",
-    fontColor: "#9A2E30",
+    fontColor: "#FF5858",
     URL: "www.tuffshed.com",
   },
   {

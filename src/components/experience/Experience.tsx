@@ -73,14 +73,14 @@ const Experience = ({ experiences }: Props) => {
                   >
                     <div className="mt-8 md:w-[100%] lg:relative lg:w-[100%]">
                       <div className="h-[2px] md:w-[50%] lg:relative lg:w-[100%]"></div>
-                      <div className="text-center text-[28px] font-bold  text-[#00ADB5]">
+                      <div className="text-center text-[28px] font-bold text-[#00ADB5]">
                         {experience.position}
                       </div>
                       <div className="relative text-center text-[28px] text-white">
                         @
                       </div>
                       <div
-                        className={`relative text-center text-3xl font-bold  drop-shadow-lg`}
+                        className={`relative text-center text-3xl font-bold underline  drop-shadow-lg`}
                         style={{ color: experience.fontColor }}
                       >
                         {experience.company}
