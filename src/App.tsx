@@ -5,11 +5,13 @@ import Navbar from "./components/navbar/Navbar";
 import MinimalistCodeBlock from "./components/minimalist-code-block/MinimalistCodeBlock";
 import AboutMe from "./components/about-me/AboutMe";
 import Experience from "./components/experience/Experience";
-import TuffShedLogo from "./assets/tuffshed-logo.png";
-import IntelLogo from "./assets/intel-logo.png";
-import QRailsLogo from "./assets/qrails-logo.png";
-import ReplayLogo from "./assets/replay-logo.png";
-import Portfolio from "./components/portfolio/Portfolio";
+import ReactLogo from "./assets/icons/react-logo.png";
+import TailwindCSSLogo from "./assets/icons/tailwindcss-logo.png";
+import TypeScriptLogo from "./assets/icons/typescript-logo.png";
+import PythonLogo from "./assets/icons/python-logo.png";
+import MongoDBLogo from "./assets/icons/mongodb-logo.png";
+import FlaskLogo from "./assets/icons/flask-logo.png";
+import FeaturedProjectCard from "./components/portfolio/FeaturedProjectCard";
 
 const experiences = [
   {
@@ -35,7 +37,7 @@ const experiences = [
       "Developed an API solution that reduced customer drop-off rate by 65% and decreased customer-service call times.",
     description3:
       "Utilized Salesforce and additional microservices to develop solutions for internal tooling and utility, resulting in significant improvements in operational efficiency.",
-    fontColor: "#FF5858",
+    fontColor: "#9A2E30",
     URL: "www.tuffshed.com",
   },
   {
@@ -92,7 +94,60 @@ function App() {
             <Experience experiences={experiences} />
           </div>
           <br />
-          <Portfolio />
+          <div className="text-center text-[18px] font-bold text-[#00ADB5] drop-shadow-md md:text-center lg:text-center lg:text-[20px] ">
+            <div className="relative mb-16 lg:mr-[40%]">
+              <div className="relative right-14 top-6 mr-6 text-[12px] text-white lg:right-16 ">
+                3.
+              </div>
+              <div className="">My Portfolio</div>
+
+              <div className="mx-auto h-[1px] w-[340px] bg-[#FFFFFF] drop-shadow-md"></div>
+            </div>
+          </div>{" "}
+          <br />
+          <div className="">
+            <FeaturedProjectCard
+              title={"fmly"}
+              description1={
+                "fmly is an application that enables families to utilize technology to keep a household running smoothly."
+              }
+              description2={
+                "From general to-do’s to a fully interactive gamified chore system, fmly will help households run more efficiently. With it’s integrated calendar fmly will provide reminders and notifications to stay on top of things at home."
+              }
+              description3={
+                "Also, fmly has a premium feature that will allow you to keep track of family members via GPS, so you will know where they are in case of any emergencies."
+              }
+              image={""}
+              githubURL={""}
+              liveURL={""}
+              techUsed={[
+                ReactLogo,
+                TailwindCSSLogo,
+                TypeScriptLogo,
+                PythonLogo,
+                FlaskLogo,
+                MongoDBLogo,
+              ]}
+            />
+          </div>
+          <div className="">
+            <FeaturedProjectCard
+              title={"J.A.R.V.I.S."}
+              description1={
+                "J.A.R.V.I.S or Just A Rather Very Intelligent System consumes the OpenAI API to be able to interact with various models that are available!"
+              }
+              description2={
+                "The application is still in it’s MVP phase, but eventually it will have added functionality to interact with different AI models depending on your goal for the interaction."
+              }
+              description3={
+                "So what are you waiting for? Go and check out J.A.R.V.I.S today!"
+              }
+              image={""}
+              githubURL={""}
+              liveURL={""}
+              techUsed={[]}
+            />
+          </div>
         </div>
       </div>
     </>
