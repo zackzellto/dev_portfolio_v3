@@ -18,31 +18,36 @@ const FeaturedProjectCard = (props: Props) => {
   return (
     <div className="mt-8">
       <div className="relative m-auto text-[#00ADB5]">
-        <div className="relative mb-1 text-[14px]">Featured Project</div>
+        <div className="relative mb-1 text-[14px] lg:ml-[180px]">
+          Featured Project
+        </div>
       </div>
-      <img
-        className="hidden sm:w-full sm:justify-center sm:overflow-hidden sm:opacity-30 sm:hover:opacity-100 md:w-[50%]"
-        src={props.image}
-        alt="project image"
-      />
-      <div className="relative m-auto w-[100%] rounded-xl bg-[#393E46] p-8 text-[14px] text-white shadow-xl drop-shadow-lg lg:w-[70%]">
+
+      <div className="relative  m-auto w-[100%] rounded-xl bg-[#393E46] p-8 text-[14px] text-white shadow-xl drop-shadow-lg lg:w-[70%]">
+        <img
+          className=" mx-auto hidden transform shadow-xl transition-all duration-300 hover:scale-105 sm:block sm:w-3/4 sm:justify-center sm:overflow-hidden sm:opacity-30 sm:hover:opacity-100  md:w-[80%]"
+          src={props.image}
+          alt="project image"
+        />
         <div
           className={`mb-8 text-center text-5xl font-bold drop-shadow-lg md:text-6xl lg:text-7xl ${props.fontFamily}`}
         >
           {props.title}
         </div>
-
         <div className="text-center text-[14px] font-normal text-[#EEEEEE] underline">
           Built with:
         </div>
         <div className="flex items-center justify-center ">
           {props.techUsed.map((tech) => (
             <div className="mr-1 inline-block rounded-md text-end text-[12px] text-white">
-              <img className="mt-2 h-10 w-10" src={tech} alt="Skill Icons" />
+              <img
+                className="mt-2 h-10 w-10 md:h-12 md:w-12 "
+                src={tech}
+                alt="Skill Icons"
+              />
             </div>
           ))}
         </div>
-
         <div className="mx-auto mb-4 mt-8 h-[1px] w-[70%] bg-[#00ADB5] text-center drop-shadow-md"></div>
         <div className="mx-auto w-[80%] text-[14px] font-normal text-[#EEEEEE]">
           <ul className="relative">

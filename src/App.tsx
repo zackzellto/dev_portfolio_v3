@@ -109,7 +109,7 @@ function App() {
           <br />
           <div className="">
             <FeaturedProjectCard
-              title={"fmly"}
+              title={""}
               description1={
                 "fmly is an application that enables families to utilize technology to keep a household running smoothly."
               }
@@ -135,7 +135,7 @@ function App() {
           </div>
           <div className="">
             <FeaturedProjectCard
-              title={"J.A.R.V.I.S."}
+              title={""}
               description1={
                 "J.A.R.V.I.S or Just A Rather Very Intelligent System consumes the OpenAI API to be able to interact with various models that are available!"
               }
