@@ -160,8 +160,8 @@ function App() {
                 MongoDBLogo,
               ]}
             />
+            <RegularProjectsCard />
           </div>
-          <RegularProjectsCard />
         </div>
       </div>
     </>

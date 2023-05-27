@@ -18,12 +18,12 @@ const FeaturedProjectCard = (props: Props) => {
   return (
     <div className="mb-16">
       <div className="relative m-auto text-[#00ADB5]">
-        <div className="relative mb-1 text-[14px] lg:ml-[15%]">
+        <div className="relative mb-1 text-[14px] lg:ml-[20%]">
           Featured Project
         </div>
       </div>
 
-      <div className="relative  m-auto w-[100%] rounded-xl bg-[#393E46] p-8 text-[14px] text-white shadow-xl drop-shadow-lg lg:w-[70%]">
+      <div className="relative  m-auto w-[100%] rounded-xl bg-[#393E46] p-8 text-[14px] text-white shadow-xl drop-shadow-lg lg:w-[60%]">
         <img
           className=" mx-auto mb-4 hidden transform shadow-xl transition-all duration-300 hover:scale-105 sm:block sm:w-3/4 sm:justify-center sm:overflow-hidden sm:opacity-30 sm:hover:opacity-100  md:w-[60%]"
           src={props.image}
