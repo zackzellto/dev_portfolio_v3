@@ -16,21 +16,21 @@ type Props = {
 
 const FeaturedProjectCard = (props: Props) => {
   return (
-    <div className="mt-8">
+    <div className="mb-16">
       <div className="relative m-auto text-[#00ADB5]">
-        <div className="relative mb-1 text-[14px] lg:ml-[180px]">
+        <div className="relative mb-1 text-[14px] lg:ml-[15%]">
           Featured Project
         </div>
       </div>
 
       <div className="relative  m-auto w-[100%] rounded-xl bg-[#393E46] p-8 text-[14px] text-white shadow-xl drop-shadow-lg lg:w-[70%]">
         <img
-          className=" mx-auto hidden transform shadow-xl transition-all duration-300 hover:scale-105 sm:block sm:w-3/4 sm:justify-center sm:overflow-hidden sm:opacity-30 sm:hover:opacity-100  md:w-[80%]"
+          className=" mx-auto mb-4 hidden transform shadow-xl transition-all duration-300 hover:scale-105 sm:block sm:w-3/4 sm:justify-center sm:overflow-hidden sm:opacity-30 sm:hover:opacity-100  md:w-[60%]"
           src={props.image}
           alt="project image"
         />
         <div
-          className={`mb-8 text-center text-5xl font-bold drop-shadow-lg md:text-6xl lg:text-7xl ${props.fontFamily}`}
+          className={`mb-8 text-center text-5xl font-bold drop-shadow-lg sm:hidden md:text-6xl lg:text-7xl ${props.fontFamily}`}
         >
           {props.title}
         </div>

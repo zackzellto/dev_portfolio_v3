@@ -14,6 +14,7 @@ import FlaskLogo from "./assets/icons/flask-logo.png";
 import FeaturedProjectCard from "./components/portfolio/FeaturedProjectCard";
 import Jarvis from "./assets/jarvis-img.png";
 import WoodenHand from "./assets/woodhand-mock.png";
+import RegularProjectsCard from "./components/portfolio/RegularProjectCard";
 
 const experiences = [
   {
@@ -96,20 +97,21 @@ function App() {
             <Experience experiences={experiences} />
           </div>
           <br />
+          <div className="text-center sm:-mb-8 md:-mb-32 lg:mx-auto lg:-mb-16 lg:h-[1px] lg:w-[95%] lg:bg-[#FFFFFF] lg:drop-shadow-md"></div>
           <div className="text-center text-[18px] font-bold text-[#00ADB5] drop-shadow-md md:text-center lg:text-center lg:text-[20px] ">
-            <div className="relative mb-16 lg:mr-[40%]">
-              <div className="relative right-14 top-6 mr-6 text-[12px] text-white lg:right-16 ">
+            <div className="relative mb-16">
+              <div className="relative right-14 top-6 mr-6 mt-24 text-[12px] text-white lg:right-16 ">
                 3.
               </div>
               <div className="">My Portfolio</div>
 
-              <div className="mx-auto h-[1px] bg-[#FFFFFF] drop-shadow-md"></div>
+              <div className="mx-auto h-[1px] w-[340px] bg-[#FFFFFF] drop-shadow-md"></div>
             </div>
           </div>{" "}
           <br />
           <div className="">
             <FeaturedProjectCard
-              title={""}
+              title={"fmly"}
               description1={
                 "fmly is an application that enables families to utilize technology to keep a household running smoothly."
               }
@@ -135,7 +137,7 @@ function App() {
           </div>
           <div className="">
             <FeaturedProjectCard
-              title={""}
+              title={"J.A.R.V.I.S"}
               description1={
                 "J.A.R.V.I.S or Just A Rather Very Intelligent System consumes the OpenAI API to be able to interact with various models that are available!"
               }
@@ -159,6 +161,7 @@ function App() {
               ]}
             />
           </div>
+          <RegularProjectsCard />
         </div>
       </div>
     </>
