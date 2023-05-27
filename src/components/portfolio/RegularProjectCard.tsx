@@ -2,6 +2,10 @@ import React, { useState } from "react";
 
 type Props = {
   icon: string;
+  title: string;
+  description: string;
+  viewProject: string;
+  viewCode: string;
 };
 
 const RegularProjectsCard = (props: Props) => {
@@ -47,11 +51,23 @@ const RegularProjectsCard = (props: Props) => {
           <div className="flex flex-wrap justify-center">
             <div className="relative  m-auto w-[320px] rounded-xl bg-[#393E46] p-8 text-[14px] text-white shadow-xl drop-shadow-lg">
               <img
-                className=" mx-auto mb-4 hidden transform shadow-xl transition-all duration-300 hover:scale-105 sm:block sm:w-3/4 sm:justify-center sm:overflow-hidden sm:opacity-30 sm:hover:opacity-100 md:w-[60%]"
+                className=" mx-auto mb-4 transform shadow-xl transition-all duration-300 hover:scale-105 sm:block sm:w-3/4 sm:justify-center sm:overflow-hidden sm:opacity-30 sm:hover:opacity-100 md:w-[60%]"
                 src={props.icon}
                 alt="project icon"
               />
-              <div className=" text-white "></div>
+              <div className=" text-white ">
+                <div className="mb-2 text-[18px] font-bold">{props.title}</div>
+                <p className="text-justify text-[14px]">{props.description}</p>
+                <div className="mt-4 flex justify-center">
+                  <button className="rounded-full bg-[#00ADB5] px-4 py-2 font-bold text-white hover:bg-[#393E46]">
+                    {props.viewProject}
+                  </button>
+
+                  <button className="ml-4 rounded-full bg-[#00ADB5] px-4 py-2 font-bold text-white hover:bg-[#393E46]">
+                    {props.viewCode}
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
