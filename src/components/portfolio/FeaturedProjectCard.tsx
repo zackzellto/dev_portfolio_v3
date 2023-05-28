@@ -73,13 +73,13 @@ const FeaturedProjectCard = (props: Props) => {
             className="cursor-pointer"
           >
             <img
-              className="relative flex cursor-pointer px-4"
+              className="relative flex cursor-pointer px-4 transition-transform duration-300 hover:scale-110"
               src={GitHubLogo}
               alt="GitHub Repo"
             />
           </a>
           <a
-            className="relative flex cursor-pointer px-4"
+            className="relative flex cursor-pointer px-4 transition-transform duration-300 hover:scale-110"
             href={props.liveURL}
             target="_blank"
             rel="noreferrer"

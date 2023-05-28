@@ -11,6 +11,16 @@ import TypeScriptLogo from "./assets/icons/typescript-logo.png";
 import PythonLogo from "./assets/icons/python-logo.png";
 import MongoDBLogo from "./assets/icons/mongodb-logo.png";
 import FlaskLogo from "./assets/icons/flask-logo.png";
+import JavaScriptLogo from "./assets/icons/javascript-logo.png";
+import NodeJSLogo from "./assets/icons/nodejs-logo.png";
+import PostgreSQLLogo from "./assets/icons/postgresql-logo.png";
+import BootstrapLogo from "./assets/icons/bootstrap-logo.png";
+import CSSLogo from "./assets/icons/css-logo.png";
+import GitLogo from "./assets/icons/git-logo.png";
+import HTMLLogo from "./assets/icons/html-logo.png";
+import GoogleLogo from "./assets/icons/google-logo.png";
+import DockerIcon from "./assets/icons/docker-logo.png";
+import GimpLogo from "./assets/icons/gimp-logo.png";
 import FeaturedProjectCard from "./components/portfolio/FeaturedProjectCard";
 import Jarvis from "./assets/jarvis-img.png";
 import WoodenHand from "./assets/woodhand-mock.png";
@@ -72,6 +82,12 @@ const experiences = [
 ];
 
 function App() {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setExpanded(!expanded);
+  };
+
   return (
     <>
       <Navbar />
@@ -160,7 +176,84 @@ function App() {
                 MongoDBLogo,
               ]}
             />
-            <RegularProjectsCard />
+          </div>
+          <div className="mt-8 text-center">
+            <div className="">
+              <div
+                className={`animate-bounce ${
+                  expanded ? "rotate-180 transform" : ""
+                } inline-block`}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="inline-block h-14 w-14 cursor-pointer"
+                  fill="#00ADB5"
+                  viewBox="0 0 24 24"
+                  stroke=""
+                  onClick={handleToggle}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div className="text-[18px] text-white">More Projects</div>
+            {expanded && (
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
+                <RegularProjectsCard
+                  icon={""}
+                  title={"AlgoStruct"}
+                  description={
+                    "AlgoStruct is a web application that allows users to visualize various sorting algorithms and data structures."
+                  }
+                  viewCode={""}
+                  viewProject={""}
+                  techUsed={[
+                    ReactLogo,
+                    BootstrapLogo,
+                    JavaScriptLogo,
+                    NodeJSLogo,
+                    PostgreSQLLogo,
+                  ]}
+                />
+                <RegularProjectsCard
+                  icon={""}
+                  title={"Squashable"}
+                  description={
+                    "Squashable is a simple web application that allows for tracking bugs and issues that arise, with charts and graphs shown on the."
+                  }
+                  viewCode={""}
+                  viewProject={""}
+                  techUsed={[
+                    ReactLogo,
+                    BootstrapLogo,
+                    JavaScriptLogo,
+                    NodeJSLogo,
+                    PostgreSQLLogo,
+                  ]}
+                />
+                <RegularProjectsCard
+                  icon={""}
+                  title={"AlgoStruct"}
+                  description={
+                    "AlgoStruct is a web application that allows users to visualize various sorting algorithms and data structures."
+                  }
+                  viewCode={""}
+                  viewProject={""}
+                  techUsed={[
+                    ReactLogo,
+                    BootstrapLogo,
+                    JavaScriptLogo,
+                    NodeJSLogo,
+                    PostgreSQLLogo,
+                  ]}
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>
