@@ -25,6 +25,7 @@ import FeaturedProjectCard from "./components/portfolio/FeaturedProjectCard";
 import Jarvis from "./assets/jarvis-img.png";
 import WoodenHand from "./assets/woodhand-mock.png";
 import RegularProjectsCard from "./components/portfolio/RegularProjectCard";
+import { FaRegFileAlt } from "react-icons/fa";
 
 const experiences = [
   {
@@ -169,6 +170,7 @@ function App() {
               liveURL={"https://jarvisopenai.netlify.app/"}
               techUsed={[
                 ReactLogo,
+                HTMLLogo,
                 TailwindCSSLogo,
                 TypeScriptLogo,
                 PythonLogo,
@@ -210,11 +212,13 @@ function App() {
                   description={
                     "AlgoStruct is a web application that allows users to visualize various sorting algorithms and data structures."
                   }
-                  viewCode={""}
+                  viewCode={"https://github.com/zackzellto/AlgoStruct"}
                   viewProject={""}
                   techUsed={[
                     ReactLogo,
                     BootstrapLogo,
+                    HTMLLogo,
+                    CSSLogo,
                     JavaScriptLogo,
                     NodeJSLogo,
                     PostgreSQLLogo,
@@ -224,32 +228,35 @@ function App() {
                   icon={""}
                   title={"Squashable"}
                   description={
-                    "Squashable is a simple web application that allows for tracking bugs and issues that arise, with charts and graphs shown on the."
+                    "Squashable is a small web app that acts as a bug or issue tracker for small teams or individuals."
                   }
-                  viewCode={""}
-                  viewProject={""}
+                  viewCode={"https://github.com/zackzellto/Squashable"}
+                  viewProject={"https://zackzellto.github.io/Squashable/"}
                   techUsed={[
                     ReactLogo,
                     BootstrapLogo,
+                    HTMLLogo,
+                    CSSLogo,
                     JavaScriptLogo,
                     NodeJSLogo,
                     PostgreSQLLogo,
                   ]}
                 />
                 <RegularProjectsCard
-                  icon={""}
-                  title={"AlgoStruct"}
+                  icon={FaRegFileAlt}
+                  title={"SWAPI"}
                   description={
-                    "AlgoStruct is a web application that allows users to visualize various sorting algorithms and data structures."
+                    "SWAPI is a simple web application that is able to consume the Star Wars API and display the data in a user friendly way."
                   }
-                  viewCode={""}
-                  viewProject={""}
+                  viewCode={"https://github.com/zackzellto/SWAPI"}
+                  viewProject={"https://zackzellto.github.io/SWAPI/"}
                   techUsed={[
                     ReactLogo,
                     BootstrapLogo,
+                    HTMLLogo,
+                    CSSLogo,
+
                     JavaScriptLogo,
-                    NodeJSLogo,
-                    PostgreSQLLogo,
                   ]}
                 />
               </div>
