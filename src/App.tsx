@@ -89,6 +89,10 @@ function App() {
     setExpanded(!expanded);
   };
 
+  const handleContactClick = () => {
+    window.location.href = "mailto:zackzelltodev@gmail.com";
+  };
+
   return (
     <>
       <Navbar />
@@ -261,6 +265,18 @@ function App() {
                   />
                 </div>
               )}
+              <div className="mx-auto mt-16 lg:h-[1px] lg:w-[95%] lg:bg-[#FFFFFF] lg:drop-shadow-md"></div>
+
+              <div className="text-center text-[18px] font-bold text-[#00ADB5] drop-shadow-md md:text-center lg:text-center lg:text-[20px] ">
+                <div className="relative mb-16">
+                  <div className="relative right-14 top-6 mr-6 mt-24 text-[12px] text-white lg:right-16 "></div>
+                  <div onClick={handleContactClick} className="">
+                    Contact Me
+                  </div>
+                  <div className="mx-auto h-[1px] w-[340px] bg-[#FFFFFF] drop-shadow-md"></div>
+                </div>
+              </div>
+              <span className="text-white">Zack Zellto '23</span>
             </div>
           </div>
         </div>
