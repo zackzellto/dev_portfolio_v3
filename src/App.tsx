@@ -92,7 +92,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto max-w-screen-2xl drop-shadow-lg lg:mt-24">
+      <div className="container mx-auto max-w-screen-2xl drop-shadow-lg">
         <div className="items-center justify-center p-8">
           <div className="lg:grid lg:grid-cols-2 ">
             <div>
@@ -104,163 +104,164 @@ function App() {
             </div>
           </div>
           <br />
-          <div className="text-center lg:mx-auto lg:-mb-48 lg:mt-40 lg:h-[1px] lg:w-[95%] lg:bg-[#FFFFFF] lg:drop-shadow-md"></div>
-          <div>
+          <div className="mt-16 text-center lg:mx-auto lg:-mb-48 lg:h-[1px] lg:w-[95%] lg:bg-[#FFFFFF] lg:drop-shadow-md"></div>
+          <div id="about">
             <AboutMe />
           </div>
           <div className="text-center sm:-mb-8 md:-mb-32 lg:mx-auto lg:-mb-16 lg:h-[1px] lg:w-[95%] lg:bg-[#FFFFFF] lg:drop-shadow-md"></div>
           <br />
-          <div>
+          <div id="experience">
             <Experience experiences={experiences} />
           </div>
           <br />
-          <div className="text-center sm:-mb-8 md:-mb-32 lg:mx-auto lg:-mb-16 lg:h-[1px] lg:w-[95%] lg:bg-[#FFFFFF] lg:drop-shadow-md"></div>
-          <div className="text-center text-[18px] font-bold text-[#00ADB5] drop-shadow-md md:text-center lg:text-center lg:text-[20px] ">
-            <div className="relative mb-16">
-              <div className="relative right-14 top-6 mr-6 mt-24 text-[12px] text-white lg:right-16 ">
-                3.
-              </div>
-              <div className="">My Portfolio</div>
+          <div id="portfolio">
+            <div className="text-center sm:-mb-8 md:-mb-32 lg:mx-auto lg:-mb-16 lg:h-[1px] lg:w-[95%] lg:bg-[#FFFFFF] lg:drop-shadow-md"></div>
+            <div className="text-center text-[18px] font-bold text-[#00ADB5] drop-shadow-md md:text-center lg:text-center lg:text-[20px] ">
+              <div className="relative mb-16">
+                <div className="relative right-14 top-6 mr-6 mt-24 text-[12px] text-white lg:right-16 ">
+                  3.
+                </div>
+                <div className="">My Portfolio</div>
 
-              <div className="mx-auto h-[1px] w-[340px] bg-[#FFFFFF] drop-shadow-md"></div>
-            </div>
-          </div>{" "}
-          <br />
-          <div className="">
-            <FeaturedProjectCard
-              title={"fmly"}
-              description1={
-                "fmly is an application that enables families to utilize technology to keep a household running smoothly."
-              }
-              description2={
-                "From general to-do’s to a fully interactive gamified chore system, fmly will help households run more efficiently. With it’s integrated calendar fmly will provide reminders and notifications to stay on top of things at home."
-              }
-              description3={
-                "Also, fmly has a premium feature that will allow you to keep track of family members via GPS, so you will know where they are in case of any emergencies."
-              }
-              image={WoodenHand}
-              fontFamily=""
-              githubURL={"https://github.com/zackzellto/fmly-landing-pg"}
-              liveURL={"https://fmlyapp-landing-page.netlify.app/"}
-              techUsed={[
-                ReactLogo,
-                TailwindCSSLogo,
-                TypeScriptLogo,
-                PythonLogo,
-                FlaskLogo,
-                MongoDBLogo,
-              ]}
-            />
-          </div>
-          <div className="">
-            <FeaturedProjectCard
-              title={"J.A.R.V.I.S"}
-              description1={
-                "J.A.R.V.I.S or Just A Rather Very Intelligent System consumes the OpenAI API to be able to interact with various models that are available!"
-              }
-              description2={
-                "The application is still in it’s MVP phase, but eventually it will have added functionality to interact with different AI models depending on your goal for the interaction."
-              }
-              description3={
-                "So what are you waiting for? Go and check out J.A.R.V.I.S today!"
-              }
-              image={Jarvis}
-              fontFamily=""
-              githubURL={"https://github.com/zackzellto/JARVIS"}
-              liveURL={"https://jarvisopenai.netlify.app/"}
-              techUsed={[
-                ReactLogo,
-                HTMLLogo,
-                TailwindCSSLogo,
-                TypeScriptLogo,
-                PythonLogo,
-                FlaskLogo,
-                MongoDBLogo,
-              ]}
-            />
-          </div>
-          <div className="mt-8 text-center">
+                <div className="mx-auto h-[1px] w-[340px] bg-[#FFFFFF] drop-shadow-md"></div>
+              </div>
+            </div>{" "}
+            <br />
             <div className="">
-              <div
-                className={`animate-bounce ${
-                  expanded ? "rotate-180 transform" : ""
-                } inline-block`}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="inline-block h-14 w-14 cursor-pointer"
-                  fill="#00ADB5"
-                  viewBox="0 0 24 24"
-                  stroke=""
-                  onClick={handleToggle}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </div>
+              <FeaturedProjectCard
+                title={"fmly"}
+                description1={
+                  "fmly is an application that enables families to utilize technology to keep a household running smoothly."
+                }
+                description2={
+                  "From general to-do’s to a fully interactive gamified chore system, fmly will help households run more efficiently. With it’s integrated calendar fmly will provide reminders and notifications to stay on top of things at home."
+                }
+                description3={
+                  "Also, fmly has a premium feature that will allow you to keep track of family members via GPS, so you will know where they are in case of any emergencies."
+                }
+                image={WoodenHand}
+                fontFamily=""
+                githubURL={"https://github.com/zackzellto/fmly-landing-pg"}
+                liveURL={"https://fmlyapp-landing-page.netlify.app/"}
+                techUsed={[
+                  ReactLogo,
+                  TailwindCSSLogo,
+                  TypeScriptLogo,
+                  PythonLogo,
+                  FlaskLogo,
+                  MongoDBLogo,
+                ]}
+              />
             </div>
-            <div className="text-[18px] text-white">More Projects</div>
-            {expanded && (
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
-                <RegularProjectsCard
-                  icon={""}
-                  title={"AlgoStruct"}
-                  description={
-                    "AlgoStruct is a web application that allows users to visualize various sorting algorithms and data structures."
-                  }
-                  viewCode={"https://github.com/zackzellto/AlgoStruct"}
-                  viewProject={""}
-                  techUsed={[
-                    ReactLogo,
-                    BootstrapLogo,
-                    HTMLLogo,
-                    CSSLogo,
-                    JavaScriptLogo,
-                    NodeJSLogo,
-                    PostgreSQLLogo,
-                  ]}
-                />
-                <RegularProjectsCard
-                  icon={""}
-                  title={"Squashable"}
-                  description={
-                    "Squashable is a small web app that acts as a bug or issue tracker for small teams or individuals."
-                  }
-                  viewCode={"https://github.com/zackzellto/Squashable"}
-                  viewProject={"https://zackzellto.github.io/Squashable/"}
-                  techUsed={[
-                    ReactLogo,
-                    BootstrapLogo,
-                    HTMLLogo,
-                    CSSLogo,
-                    JavaScriptLogo,
-                    NodeJSLogo,
-                    PostgreSQLLogo,
-                  ]}
-                />
-                <RegularProjectsCard
-                  icon={FaRegFileAlt}
-                  title={"SWAPI"}
-                  description={
-                    "SWAPI is a simple web application that is able to consume the Star Wars API and display the data in a user friendly way."
-                  }
-                  viewCode={"https://github.com/zackzellto/SWAPI"}
-                  viewProject={"https://zackzellto.github.io/SWAPI/"}
-                  techUsed={[
-                    ReactLogo,
-                    BootstrapLogo,
-                    HTMLLogo,
-                    CSSLogo,
-
-                    JavaScriptLogo,
-                  ]}
-                />
+            <div className="">
+              <FeaturedProjectCard
+                title={"J.A.R.V.I.S"}
+                description1={
+                  "J.A.R.V.I.S or Just A Rather Very Intelligent System consumes the OpenAI API to be able to interact with various models that are available!"
+                }
+                description2={
+                  "The application is still in it’s MVP phase, but eventually it will have added functionality to interact with different AI models depending on your goal for the interaction."
+                }
+                description3={
+                  "So what are you waiting for? Go and check out J.A.R.V.I.S today!"
+                }
+                image={Jarvis}
+                fontFamily=""
+                githubURL={"https://github.com/zackzellto/JARVIS"}
+                liveURL={"https://jarvisopenai.netlify.app/"}
+                techUsed={[
+                  ReactLogo,
+                  HTMLLogo,
+                  TailwindCSSLogo,
+                  TypeScriptLogo,
+                  PythonLogo,
+                  FlaskLogo,
+                  MongoDBLogo,
+                ]}
+              />
+            </div>
+            <div className="mt-8 text-center">
+              <div className="">
+                <div
+                  className={`animate-bounce ${
+                    expanded ? "rotate-180 transform" : ""
+                  } inline-block`}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="inline-block h-14 w-14 cursor-pointer"
+                    fill="#00ADB5"
+                    viewBox="0 0 24 24"
+                    stroke=""
+                    onClick={handleToggle}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
               </div>
-            )}
+              <div className="text-[18px] text-white">More Projects</div>
+              {expanded && (
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
+                  <RegularProjectsCard
+                    icon={""}
+                    title={"AlgoStruct"}
+                    description={
+                      "AlgoStruct is a web application that allows users to visualize various sorting algorithms and data structures."
+                    }
+                    viewCode={"https://github.com/zackzellto/AlgoStruct"}
+                    viewProject={""}
+                    techUsed={[
+                      ReactLogo,
+                      BootstrapLogo,
+                      HTMLLogo,
+                      CSSLogo,
+                      JavaScriptLogo,
+                      NodeJSLogo,
+                      PostgreSQLLogo,
+                    ]}
+                  />
+                  <RegularProjectsCard
+                    icon={""}
+                    title={"Squashable"}
+                    description={
+                      "Squashable is a small web app that acts as a bug or issue tracker for small teams or individuals."
+                    }
+                    viewCode={"https://github.com/zackzellto/Squashable"}
+                    viewProject={"https://zackzellto.github.io/Squashable/"}
+                    techUsed={[
+                      ReactLogo,
+                      BootstrapLogo,
+                      HTMLLogo,
+                      CSSLogo,
+                      JavaScriptLogo,
+                      NodeJSLogo,
+                      PostgreSQLLogo,
+                    ]}
+                  />
+                  <RegularProjectsCard
+                    icon={""}
+                    title={"SWAPI"}
+                    description={
+                      "SWAPI is a simple web application that is able to consume the Star Wars API and display the data in a user friendly way."
+                    }
+                    viewCode={"https://github.com/zackzellto/SWAPI"}
+                    viewProject={"https://zackzellto.github.io/SWAPI/"}
+                    techUsed={[
+                      ReactLogo,
+                      BootstrapLogo,
+                      HTMLLogo,
+                      CSSLogo,
+                      JavaScriptLogo,
+                    ]}
+                  />
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

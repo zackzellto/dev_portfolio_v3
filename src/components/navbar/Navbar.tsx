@@ -22,6 +22,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleContactClick = () => {
+    window.location.href = "mailto:zackzelltodev@gmail.com";
+  };
+
   useEffect(() => {
     const handleResize = () => {
       setIsDesktop(window.innerWidth > 768);
@@ -90,7 +94,9 @@ const Navbar = () => {
                   </li>
                   <li className="relative top-[6px]  flex">
                     <div className="px-[5px] text-[12px] text-white">4.</div>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" onClick={handleContactClick}>
+                      Contact
+                    </a>
                   </li>
                   <button className="relative rounded-lg border border-[#00ADB5] bg-[#222831] px-4 py-2 text-sm font-medium text-white">
                     Resume
@@ -122,7 +128,9 @@ const Navbar = () => {
                   </li>
                   <li className="relative top-[6px] mb-2 flex">
                     <div className="px-[5px] text-[12px] text-white">4.</div>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" onClick={handleContactClick}>
+                      Contact
+                    </a>
                   </li>
                 </ul>
                 <div className="mt-4 flex items-center justify-center">

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@material-tailwind/html": "^2.0.0",
+    "axios": "^1.4.0",
     "material-ripple-effects": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

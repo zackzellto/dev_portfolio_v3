@@ -22,7 +22,7 @@ const RegularProjectsCard = (props: Props) => {
             alt="project icon"
           />
           <div className="text-white drop-shadow-lg">
-            <div className="mb-2 text-[2.5rem] font-bold text-[#00ADB5]">
+            <div className="mb-2 text-[28px] font-bold text-[#00ADB5] md:text-[32px]">
               {props.title}
             </div>
 
