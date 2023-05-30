@@ -25,7 +25,7 @@ import FeaturedProjectCard from "./components/portfolio/FeaturedProjectCard";
 import Jarvis from "./assets/jarvis-img.png";
 import WoodenHand from "./assets/woodhand-mock.png";
 import RegularProjectsCard from "./components/portfolio/RegularProjectCard";
-import { FaRegFileAlt } from "react-icons/fa";
+import FileFolder from "./assets/file-folder.svg";
 
 const experiences = [
   {
@@ -212,10 +212,10 @@ function App() {
               {expanded && (
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
                   <RegularProjectsCard
-                    icon={""}
+                    icon={FileFolder}
                     title={"AlgoStruct"}
                     description={
-                      "AlgoStruct is a web application that allows users to visualize various sorting algorithms and data structures."
+                      "AlgoStruct is a web application that allows users to visualize algorithms and data structures."
                     }
                     viewCode={"https://github.com/zackzellto/AlgoStruct"}
                     viewProject={""}
@@ -230,7 +230,7 @@ function App() {
                     ]}
                   />
                   <RegularProjectsCard
-                    icon={""}
+                    icon={FileFolder}
                     title={"Squashable"}
                     description={
                       "Squashable is a small web app that acts as a bug or issue tracker for small teams or individuals."
@@ -248,10 +248,10 @@ function App() {
                     ]}
                   />
                   <RegularProjectsCard
-                    icon={""}
+                    icon={FileFolder}
                     title={"SWAPI"}
                     description={
-                      "SWAPI is a simple web application that is able to consume the Star Wars API and display the data in a user friendly way."
+                      "SWAPI is a web app that retrieves data from the Star Wars API and displays it in a table."
                     }
                     viewCode={"https://github.com/zackzellto/SWAPI"}
                     viewProject={"https://zackzellto.github.io/SWAPI/"}

@@ -17,7 +17,7 @@ const RegularProjectsCard = (props: Props) => {
       <div className="flex flex-wrap justify-center">
         <div className="relative m-auto h-[420px] w-[320px] overflow-hidden rounded-xl bg-[#393E46] p-8 text-[14px] text-white shadow-xl drop-shadow-lg">
           <img
-            className="mx-auto mb-4 transform shadow-xl transition-all duration-300 hover:scale-105 sm:block sm:w-3/4 sm:justify-center sm:overflow-hidden sm:opacity-30 sm:hover:opacity-100 md:w-[60%]"
+            className="mx-auto mb-4 w-[30%] transform drop-shadow-xl transition-all duration-300 hover:scale-105 sm:block sm:justify-center sm:overflow-hidden sm:opacity-30 sm:hover:opacity-100"
             src={props.icon}
             alt="project icon"
           />

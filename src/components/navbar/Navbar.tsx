@@ -139,9 +139,14 @@ const Navbar = () => {
                   </li>
                 </ul>
                 <div className="mt-4 flex items-center justify-center">
-                  <button className="rounded-lg border border-[#00ADB5] bg-[#222831] px-6 py-2 text-sm font-medium text-white">
+                  <a
+                    className="relative rounded-lg border border-[#00ADB5] bg-[#222831] px-4 py-2 text-sm font-medium text-white"
+                    href="https://drive.google.com/file/d/1GeyyQrAuNg4s4Pn37KLVEC3tDENbzY9h/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Resume
-                  </button>
+                  </a>
                 </div>{" "}
                 <div className="relative top-[48%]  mx-auto h-[1px] w-[200px] bg-[#00ADB5] drop-shadow-md"></div>
                 <div className="relative top-[50%] flex items-center justify-center">
