@@ -46,7 +46,7 @@ const GreetingHeader = (props: Props) => {
       </div>
       <div className="relative top-8 mx-auto mt-8 flex h-[1px] w-[80%] bg-[#00ADB5] drop-shadow-md md:right-8 md:w-[35%] lg:right-[10%] ">
         {" "}
-        <div className="md:relative md:left-[100%] md:top-[-16px] md:flex  ">
+        <div className="hidden md:relative md:left-[100%] md:top-[-16px] md:flex  ">
           <a
             target="_blank"
             rel="norel noopener nofollow"
