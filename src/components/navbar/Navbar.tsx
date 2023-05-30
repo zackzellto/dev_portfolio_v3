@@ -100,7 +100,7 @@ const Navbar = () => {
                   </li>
                   <a
                     className="relative rounded-lg border border-[#00ADB5] bg-[#222831] px-4 py-2 text-sm font-medium text-white"
-                    href="https://drive.google.com/file/d/14xSWWzJD3s7HrvFQ9-ZLKxqH6qLS-CPT/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1GeyyQrAuNg4s4Pn37KLVEC3tDENbzY9h/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -153,13 +153,28 @@ const Navbar = () => {
                   >
                     <FaGithubAlt className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
                   </a>
-                  <a href="" className="mx-4">
+                  <a
+                    href="https://www.linkedin.com/in/zackzellto/"
+                    target="_blank"
+                    rel="norel nofollow"
+                    className="mx-4"
+                  >
                     <FaLinkedinIn className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
                   </a>
-                  <a href="" className="mx-4">
+                  <a
+                    href="https://twitter.com/ZackZelltoDev"
+                    target="_blank"
+                    rel="norel nofollow"
+                    className="mx-4"
+                  >
                     <FaTwitterSquare className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
                   </a>
-                  <a href="" className="mx-4">
+                  <a
+                    href="https://codepen.io/zackzellto"
+                    target="_blank"
+                    rel="norel nofollow"
+                    className="mx-4"
+                  >
                     <FaCodepen className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
                   </a>
                 </div>

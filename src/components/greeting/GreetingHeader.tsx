@@ -34,7 +34,7 @@ const GreetingHeader = (props: Props) => {
         <br />
         <div className="text-[58px] font-bold text-[#EEEEEE] drop-shadow-md md:text-[64px] lg:text-[80px]">
           Zack Zellto{" "}
-          <div className="relative bottom-6  text-[18px] text-[#00ADB5] drop-shadow-md lg:text-[24px] ">
+          <div className="relative bottom-6 text-[18px] text-[#00ADB5] drop-shadow-md lg:text-[24px] ">
             a Software Engineer with a creative eye.
           </div>
         </div>{" "}
@@ -46,17 +46,37 @@ const GreetingHeader = (props: Props) => {
       </div>
       <div className="relative top-8 mx-auto mt-8 flex h-[1px] w-[80%] bg-[#00ADB5] drop-shadow-md md:right-8 md:w-[35%] lg:right-[10%] ">
         {" "}
-        <div className="hidden md:relative md:left-[100%] md:top-[-16px] md:flex">
-          <a href="" className="mx-2">
+        <div className="md:relative md:left-[100%] md:top-[-16px] md:flex  ">
+          <a
+            target="_blank"
+            rel="norel noopener nofollow"
+            href="https://github.com/zackzellto"
+            className="mx-2"
+          >
             <FaGithubAlt className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
           </a>
-          <a href="" className="mx-2">
+          <a
+            href="https://www.linkedin.com/in/zackzellto/"
+            target="_blank"
+            rel="norel nofollow"
+            className="mx-2"
+          >
             <FaLinkedinIn className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
           </a>
-          <a href="" className="mx-2">
+          <a
+            href="https://twitter.com/ZackZelltoDev"
+            target="_blank"
+            rel="norel nofollow"
+            className="mx-2"
+          >
             <FaTwitterSquare className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
           </a>
-          <a href="" className="mx-2">
+          <a
+            href="https://codepen.io/zackzellto"
+            target="_blank"
+            rel="norel nofollow"
+            className="mx-2"
+          >
             <FaCodepen className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
           </a>
         </div>
