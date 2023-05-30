@@ -98,9 +98,14 @@ const Navbar = () => {
                       Contact
                     </a>
                   </li>
-                  <button className="relative rounded-lg border border-[#00ADB5] bg-[#222831] px-4 py-2 text-sm font-medium text-white">
+                  <a
+                    className="relative rounded-lg border border-[#00ADB5] bg-[#222831] px-4 py-2 text-sm font-medium text-white"
+                    href="https://drive.google.com/file/d/14xSWWzJD3s7HrvFQ9-ZLKxqH6qLS-CPT/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Resume
-                  </button>
+                  </a>
                 </ul>
               </>
             ) : (
@@ -140,7 +145,12 @@ const Navbar = () => {
                 </div>{" "}
                 <div className="relative top-[48%]  mx-auto h-[1px] w-[200px] bg-[#00ADB5] drop-shadow-md"></div>
                 <div className="relative top-[50%] flex items-center justify-center">
-                  <a href="" className="mx-4">
+                  <a
+                    target="_blank"
+                    rel="norel nofollow"
+                    href="https://github.com/zackzellto"
+                    className="mx-4"
+                  >
                     <FaGithubAlt className="h-6 w-6 text-[#FFFFFF] transition-colors duration-300 hover:text-[#00ADB5]" />
                   </a>
                   <a href="" className="mx-4">
