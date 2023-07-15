@@ -141,7 +141,7 @@ const Navbar = () => {
                 <div className="mt-4 flex items-center justify-center">
                   <a
                     className="relative rounded-lg border border-[#00ADB5] bg-[#222831] px-4 py-2 text-sm font-medium text-white"
-                    href="https://drive.google.com/file/d/1GeyyQrAuNg4s4Pn37KLVEC3tDENbzY9h/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1MV9uD2pe68O8nIZ17jABj_jq57qzbFuJ/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
