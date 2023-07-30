@@ -1,5 +1,5 @@
 import React from "react";
-import ZackPic from "../../assets/zackpic.png";
+import ZackPic from "../../assets/ZackPortfolioPic.png";
 import ChatGPTLogo from "../../assets/icons/chatgpt-logo.png";
 import BootstrapLogo from "../../assets/icons/bootstrap-logo.png";
 import CSSLogo from "../../assets/icons/css-logo.png";
@@ -79,7 +79,7 @@ const AboutMe = (props: Props) => {
         </div>
       </div>
       <br />
-      <div className="relative z-10 mx-auto mt-16 flex h-auto w-[220px] rounded-lg bg-[#00ADB5] sm:mt-8 sm:h-[230px] sm:w-[250px] md:left-[200px] md:top-16 md:mb-8 md:h-[285px] md:w-[320px] lg:-left-[21%] lg:top-80 lg:h-[350px] lg:w-[390px] xl:top-48">
+      <div className="relative z-10 mx-auto mt-16 flex h-auto w-[220px] rounded-lg bg-[#00ADB5] sm:mt-8 sm:h-[230px] sm:w-[230px] md:left-[200px] md:top-16 md:mb-8 md:h-[285px] md:w-[280px] lg:-left-[21%] lg:top-80 lg:h-[350px] lg:w-[340px] xl:top-48">
         <img
           className="opacity-40 shadow-xl hover:opacity-100 md:mt-0"
           src={ZackPic}
