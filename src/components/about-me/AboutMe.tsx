@@ -133,7 +133,7 @@ const AboutMe = (props: Props) => {
         </div>
         <br />
         <div className="indent-8 lg:relative lg:left-24">
-          I’m an extremely headstrong person who has achieved success from hard
+          I’m an extremely passionate person who has achieved success from hard
           work, dedication, and persistence. I’m also a knowledge advocate that
           firmly believes that everyone can be a better version of themselves by
           teaching themselves a new skill, especially in the information age we
