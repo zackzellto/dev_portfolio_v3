@@ -39,9 +39,9 @@ const GreetingHeader = (props: Props) => {
           </div>
         </div>{" "}
         <div className="mx-auto text-[14px] text-white drop-shadow-md md:w-[80%] md:text-center lg:mb-8 lg:text-[18px]">
-          I’m a results-driven person who specializes in problem solving and
-          applies solutions through exceptional applications that improve the
-          lives of others.
+          As a results-focused professional, I utilize my skills to create
+          software solutions that enhance both corporate efficiency and user
+          experiences.
         </div>{" "}
       </div>
       <div className="relative top-8 mx-auto mt-8 flex h-[1px] w-[80%] bg-[#00ADB5] drop-shadow-md md:right-8 md:w-[35%] lg:right-[10%] ">
