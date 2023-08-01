@@ -40,7 +40,7 @@ const GreetingHeader = (props: Props) => {
         </div>{" "}
         <div className="mx-auto text-[14px] text-white drop-shadow-md md:w-[80%] md:text-center lg:mb-8 lg:text-[18px]">
           As a results-focused professional, I utilize my skills to create
-          software solutions that enhance both corporate efficiency and user
+          software solutions that enhance both business efficiency and user
           experiences.
         </div>{" "}
       </div>
